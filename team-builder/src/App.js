@@ -25,8 +25,6 @@ function App() {
     setTeamMembers([...teamMembers, newMembers])
   }
 
-
-
   return (
     <div className="App">
       <h1>Team Member List</h1>
