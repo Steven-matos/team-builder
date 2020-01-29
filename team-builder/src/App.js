@@ -24,7 +24,7 @@ function App() {
       id: Date.now(),
       name: member.name,
       email: member.email,
-      jobTitle: member.role
+      role: member.role
     };
     setTeamMembers([...teamMembers, newMembers])
   }

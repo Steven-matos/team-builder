@@ -38,7 +38,7 @@ const Form = ({ addNewTeamMember}) => {
     const [info, setInfo] = useState({
         name: '',
         email: '',
-        jobTitle: ''
+        role: ''
     })
 
     const handleChange = e => {
@@ -65,7 +65,7 @@ const Form = ({ addNewTeamMember}) => {
             <input
                 id='email'
                 type='email'
-                name='role'
+                name='email'
                 onChange={handleChange}
                 value={info.email}
             />
