@@ -2,7 +2,11 @@ import React, {useState} from 'react';
 import Form from './components/Form';
 import FormList from './components/FormList';
 import './App.css';
+import styled from 'styled-components';
 
+const Title = styled.h1 `
+  font-family: 'Roboto', sans-serif;
+`;
 
 function App() {
 
@@ -27,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Team Member List</h1>
+      <Title>Team Member List</Title>
       <Form addNewTeamMember={addNewTeamMember} />
       <FormList teamMembers={teamMembers} />
 
