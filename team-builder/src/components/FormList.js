@@ -5,8 +5,10 @@ const FormList = (props) => {
         <div>
             {props.teamMembers.map( memeber => (
                 <div>
-                    <h2>{memeber.name}</h2>
-                    <p>{memeber.jobTitle}</p>
+                    <h2>{memeber.role}</h2>
+                    <p><span>{memeber.name}</span></p>
+                    <p>{memeber.email}</p>
+                    
                 </div>
             ))}
         </div>

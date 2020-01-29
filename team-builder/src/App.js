@@ -10,7 +10,8 @@ function App() {
     {
       id: 1,
       name: 'Steven M.',
-      jobTitle: 'Front End Web Dev.'
+      email: 'StevenM@lambda.com',
+      role: 'Front End Web Dev.'
     }
   ]);
 
@@ -18,7 +19,8 @@ function App() {
     const newMembers = {
       id: Date.now(),
       name: member.name,
-      jobTitle: member.jobTitle
+      email: member.email,
+      jobTitle: member.role
     };
     setTeamMembers([...teamMembers, newMembers])
   }
@@ -28,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <h1>Team Member List</h1>
-      <Form />
+      <Form addNewTeamMember={addNewTeamMember} />
       <FormList teamMembers={teamMembers} />
 
     </div>
