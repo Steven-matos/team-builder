@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+
+html,
+body,
+.App,
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App, body {
+  text-align: center;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 37%, rgba(148,187,233,1) 100%);
+}
